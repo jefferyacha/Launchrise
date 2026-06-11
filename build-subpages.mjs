@@ -9,7 +9,8 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-const ROOT = path.dirname(decodeURI(new URL(import.meta.url).pathname.replace(/^\//, '')));
+import { fileURLToPath } from 'node:url';
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
 
 function rebuild(file, title, contentHTML) {
   const idx = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
