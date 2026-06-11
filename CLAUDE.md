@@ -2,6 +2,14 @@
 
 You're working inside the **WAT framework** (Workflows, Agents, Tools). This architecture separates concerns so that probabilistic AI handles reasoning while deterministic code handles execution. That separation is what makes this system reliable.
 
+## Deployment Rule — localhost first, push only on my say-so
+- **Never push changes to GitHub or Vercel automatically.** Not after a tweak, not after a "looks done" moment, not even if the change is small.
+- Every change must land **on localhost first**. Show me at `http://localhost:3000` (or the project's preview URL) and wait.
+- I will review it in the browser. When I'm satisfied I'll say something like "deploy", "push it", "ship it", "commit and push", or similar **explicit** go-ahead.
+- **Only after that explicit approval** do you run `git add` / `git commit` / `git push`. The push to `main` is what triggers the live Vercel deploy, so the push *is* the deploy — treat it that way.
+- If I just say "save this" or "looks good", that is NOT a push instruction. Save = local change only. Push = a separate, explicit step I have to ask for.
+- If you're ever unsure whether I'm asking you to deploy, **ask**. Don't guess in the direction of pushing.
+
 ## The WAT Architecture
 
 **Layer 1: Workflows (The Instructions)**

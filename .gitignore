@@ -20,6 +20,12 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+tunnel.log
+
+# internal tooling state
+skills-lock.json
+.agents/
+.mobile-shots/
 
 # env / secrets
 .env

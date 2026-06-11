@@ -40,9 +40,11 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ext = path.extname(filePath).toLowerCase();
+    // HTML / JS uncached so edits show; everything else (svg, png, jpg, woff) cached briefly so navigation feels instant.
+    const cache = (ext === '.html' || ext === '.js' || ext === '.mjs') ? 'no-store' : 'public, max-age=300';
     res.writeHead(200, {
       'Content-Type': MIME[ext] || 'application/octet-stream',
-      'Cache-Control': 'no-store',
+      'Cache-Control': cache,
     });
     fs.createReadStream(filePath).pipe(res);
   });

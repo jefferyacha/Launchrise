@@ -34,14 +34,16 @@ const outPath = path.join(OUT_DIR, filename);
     await new Promise(r => setTimeout(r, 800));
     // Pre-scroll through the whole page so IntersectionObserver-driven reveals fire
     await page.evaluate(async () => {
+      // disable smooth scroll so jumping back to top is instant
+      document.documentElement.style.scrollBehavior = 'auto';
       const h = document.documentElement.scrollHeight;
       const step = Math.max(window.innerHeight * 0.7, 400);
       for (let y = 0; y < h; y += step) {
-        window.scrollTo(0, y);
+        window.scrollTo({ top: y, behavior: 'instant' });
         await new Promise(r => setTimeout(r, 90));
       }
-      window.scrollTo(0, 0);
-      await new Promise(r => setTimeout(r, 400));
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      await new Promise(r => setTimeout(r, 500));
     });
     // mode can be: 'full', 'viewport', or '#anchor' to scroll to an element
     if (mode.startsWith('#')) {

@@ -1,0 +1,6 @@
+{
+  "buildCommand": "node build-subpages.mjs",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
