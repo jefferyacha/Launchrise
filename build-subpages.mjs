@@ -53,7 +53,7 @@ const heroBlock = (eyebrow, headline, sub) => `  <section class="sec sec--hero" 
   </section>
 `;
 
-const auditCTA = `<a href="https://cal.com/launchrise/audit" target="_blank" rel="noopener" class="btn btn--gold btn-cta-pulse">Let's talk
+const auditCTA = `<a href="https://cal.com/ryanacha/audit" target="_blank" rel="noopener" class="btn btn--gold btn-cta-pulse">Let's talk
   <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
 </a>`;
 
@@ -198,7 +198,7 @@ const ourWorkContent = workCardPhotoStyles + heroBlock('Our work', 'Real results
       <div class="work-grid reveal-stagger">
 ${CASE_STUDIES.map((cs, i) => csCard(cs, i)).join('\n')}
         <article class="work-card reveal-item" style="--i:${CASE_STUDIES.length}"><div class="work-img" aria-hidden="true">Coming soon</div><div class="work-meta"><h3 class="work-name">More case studies</h3><p class="work-result">Rolling out as clients sign off on publication.</p></div></article>
-        <a class="work-card work-card--cta reveal-item" style="--i:${CASE_STUDIES.length + 1}" href="https://cal.com/launchrise/audit" target="_blank" rel="noopener" aria-label="Apply for an audit to see your industry shipped next"><div class="work-img" aria-hidden="true">Yours next?</div><div class="work-meta"><h3 class="work-name">Your industry, shipped next.</h3><p class="work-result">Apply for an audit. We'll tell you what we'd build, in plain English.</p></div></a>
+        <a class="work-card work-card--cta reveal-item" style="--i:${CASE_STUDIES.length + 1}" href="https://cal.com/ryanacha/audit" target="_blank" rel="noopener" aria-label="Apply for an audit to see your industry shipped next"><div class="work-img" aria-hidden="true">Yours next?</div><div class="work-meta"><h3 class="work-name">Your industry, shipped next.</h3><p class="work-result">Apply for an audit. We'll tell you what we'd build, in plain English.</p></div></a>
       </div>
       <div class="work-foot reveal" style="margin-top: 60px; justify-content: center;">${auditCTA}</div>
     </div>
@@ -250,7 +250,7 @@ const INDUSTRIES = [
   { icon: 'star', title: 'Hospitality & luxury', desc: 'Concierge automation, VIP client management, and AI booking systems for luxury travel and hospitality brands.', tags: ['Concierge AI', 'VIP Management', 'Booking Automation'] },
 ];
 
-const industryCard = (it, i) => `        <a class="ind-card reveal-item" style="--i:${i}" href="https://cal.com/launchrise/audit" target="_blank" rel="noopener" aria-label="${it.title}. Apply for an audit">
+const industryCard = (it, i) => `        <a class="ind-card reveal-item" style="--i:${i}" href="https://cal.com/ryanacha/audit" target="_blank" rel="noopener" aria-label="${it.title}. Apply for an audit">
           <div class="ind-icon">${ICONS[it.icon]}</div>
           <h3 class="ind-title">${it.title}</h3>
           <p class="ind-desc">${it.desc}</p>
@@ -267,7 +267,7 @@ const industriesGrid = `
       </div>
       <div class="ind-grid reveal-stagger">
 ${INDUSTRIES.map(industryCard).join('\n')}
-        <a class="ind-card ind-card--cta reveal-item" style="--i:${INDUSTRIES.length}" href="https://cal.com/launchrise/audit" target="_blank" rel="noopener" aria-label="Don't see your industry? Apply for an audit">
+        <a class="ind-card ind-card--cta reveal-item" style="--i:${INDUSTRIES.length}" href="https://cal.com/ryanacha/audit" target="_blank" rel="noopener" aria-label="Don't see your industry? Apply for an audit">
           <div class="ind-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
           <h3 class="ind-title">Don't see your industry?</h3>
           <p class="ind-desc">If your business runs on workflows, data, or customers, we've probably built something close. Send us the ugliest part of your operation and we'll tell you what we'd ship.</p>
@@ -301,7 +301,7 @@ const academyContent = heroBlock('LaunchRise Academy <span class="coming-soon-ba
         <article class="ac-mod reveal-item" style="--i:2"><span class="ac-tag">For founders</span><h3>Build, buy, or wait.</h3><p>Some things are worth building yourself. Some you should just buy. And some you're better off leaving alone for now. This is the same approach we use to decide where to spend on AI across our own companies, with real numbers and the honest trade-offs behind each call.</p><ul><li>A build vs buy decision tree</li><li>A vendor due-diligence checklist</li><li>A roadmap for your first 18 months</li></ul></article>
       </div>
       <div class="ac-foot reveal">
-        <a href="https://cal.com/launchrise/audit" target="_blank" rel="noopener" class="btn btn--gold btn-cta-pulse">Join the waitlist
+        <a href="https://cal.com/ryanacha/audit" target="_blank" rel="noopener" class="btn btn--gold btn-cta-pulse">Join the waitlist
           <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
